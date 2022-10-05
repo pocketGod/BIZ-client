@@ -1,4 +1,4 @@
-# Mikonos Biz - client side
+# Mikonos Biz - Client Side
 This project was made as a summary excercise in React + Node.JS
 
 ## Deployed Version:
