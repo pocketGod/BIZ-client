@@ -1,4 +1,5 @@
 # Mikonos Biz - client side
+This project was made as a summary excercise in React + Node.JS
 
 ## Deployed Version:
 https://mikonos-biz.netlify.app/
