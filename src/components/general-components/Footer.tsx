@@ -1,4 +1,5 @@
 import { FunctionComponent } from "react";
+import logo from '../../../public/logo.png'
 
 interface FooterProps {
     
@@ -10,7 +11,7 @@ const Footer: FunctionComponent<FooterProps> = () => {
             <footer className="d-flex flex-wrap justify-content-between align-items-center">
                 <div className="col-md-4 d-flex align-items-center">
                     
-                    <img src="logo.png" className="footer-logo me-2"/>
+                    <img src="/logo.png" className="footer-logo me-2"/>
                   
                     <span className="mb-3 mb-md-0 text-muted">Coded By Aviv Shleyfman &copy; 2022 Biz Mikonos Inc</span>
                 </div>

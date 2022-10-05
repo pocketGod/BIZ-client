@@ -45,12 +45,12 @@ const MyBiz: FunctionComponent<MyBizProps> = () => {
                 <>
                     <div className="row mb-4">
                         <div className="text-muted text-center col-sm-6 col-12">
-                            <p className="my-top-section w-100">
+                            <p className="my-top-section display-6 fs-5 w-100">
                                 You Have {mycardsData.length} Biz Cards in Total
                             </p>
                         </div>
                         <div onClick={()=>navigate('/new-biz')}  className="text-muted text-center col-sm-6 col-12">
-                            <p className="my-top-section my-top-section-action w-100 display-6 fs-5">Add a New Biz Card
+                            <p className="my-top-section  my-top-section-action w-100 display-6 fs-5">Add a New Biz Card
                                 <i className="ms-3 fa-solid fa-plus"></i>
                             </p>
                         </div>

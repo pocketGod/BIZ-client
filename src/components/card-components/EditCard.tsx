@@ -62,36 +62,36 @@ const EditCard: FunctionComponent<EditCardProps> = () => {
             <form onSubmit={formik.handleSubmit} className='text-center w-50 mx-auto'>  
                 <div className="mb-3 form-floating">
                     <input type="text" className="form-control" id="cardName" name='name' value={formik.values.name} onChange={formik.handleChange} onBlur={formik.handleBlur} placeholder="c"/>
-                    <label htmlFor="cardName" className="form-label">Name</label>
+                    <label htmlFor="cardName" className="form-label display-6 fs-5">Name</label>
                     {formik.touched.name && formik.errors.name ? (<p className="text-danger">{formik.errors.name}</p>):null}
                 </div>
                 <div className="mb-3 form-floating">
                     <input type="text" className="form-control" id="cardAddress" name='address' value={formik.values.address} onChange={formik.handleChange} onBlur={formik.handleBlur} placeholder="c"/>
-                    <label htmlFor="cardAddress" className="form-label">Address</label>
+                    <label htmlFor="cardAddress" className="form-label display-6 fs-5">Address</label>
                     {formik.touched.address && formik.errors.address ? (<p className="text-danger">{formik.errors.address}</p>):null}
                 </div>
                 <div className="mb-3 form-floating">
                     <select className="form-select display-6 fs-6"   id="cardCategory" name='category' value={formik.values.category} onChange={formik.handleChange} onBlur={formik.handleBlur}>
                         {categoryArr.map((cat)=>(
-                            <option value={cat}>{cat}</option>
+                            <option key={cat} value={cat}>{cat}</option>
                         ))}
                     </select>
-                    <label htmlFor="cardCategory" className="form-label">Category</label>
+                    <label htmlFor="cardCategory" className="form-label display-6 fs-5">Category</label>
                     {formik.touched.category && formik.errors.category ? (<p className="text-danger">{formik.errors.address}</p>):null}
                 </div>
                 <div className="mb-3 form-floating">
                     <input type="text" className="form-control" id="cardDescription" name='description' value={formik.values.description} onChange={formik.handleChange} onBlur={formik.handleBlur} placeholder="c"/>
-                    <label htmlFor="cardDescription" className="form-label">Description</label>
+                    <label htmlFor="cardDescription" className="form-label display-6 fs-5">Description</label>
                     {formik.touched.description && formik.errors.description ? (<p className="text-danger">{formik.errors.description}</p>):null}
                 </div>
                 <div className="mb-3 form-floating">
                     <input type="string" className="form-control" id="productPhone" name='phone' value={formik.values.phone} onChange={formik.handleChange} onBlur={formik.handleBlur} placeholder="c"/>
-                    <label htmlFor="productPhone" className="form-label">Phone</label>
+                    <label htmlFor="productPhone" className="form-label display-6 fs-5">Phone</label>
                     {formik.touched.phone && formik.errors.phone ? (<p className="text-danger">{formik.errors.phone}</p>):null}
                 </div>
                 <div className="mb-3 form-floating">
                     <input type="text" className="form-control" id="cardImage" name='img' value={formik.values.img} onChange={formik.handleChange} onBlur={formik.handleBlur} placeholder="c"/>
-                    <label htmlFor="cardImage" className="form-label">Image URL</label>
+                    <label htmlFor="cardImage" className="form-label display-6 fs-5">Image URL</label>
                     {formik.touched.img && formik.errors.img ? (<p className="text-danger">{formik.errors.img}</p>):null}
                 </div>
                 

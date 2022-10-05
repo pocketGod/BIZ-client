@@ -33,9 +33,11 @@ const BizCard: FunctionComponent<BizCardProps> = ({card, page}) => {
                         <i className="fa-solid fa-location-dot me-3"></i>{card.address}
                     </p>
                 </>):(<>
-                    <div className="d-flex flex-column align-items-end justify-content-center h-100">
-                        <h6 className="text-center card-title display-5">{card.name}</h6>
-                        <h6 className="text-center card-title fs-3 display-5"><small>in:</small>{card.category}</h6>
+                    <div className="d-flex flex-column justify-content-between h-100">
+                        <h6 className="text-center card-title display-5">{card.name.length >= 15 ? (
+                            card.name.substring(0, 15) + '...')
+                            :(card.name)}</h6>
+                        <h6 className="text-center card-title fs-5 display-5"><small>in:</small>{card.category}</h6>
                     </div>
                 </>)}
             </div>

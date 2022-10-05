@@ -63,14 +63,14 @@ const Cards: FunctionComponent<CardsProps> = () => {
                 <>
                     <div className="row mb-2">
                         <div className="text-muted text-center col-12">
-                            <p className="my-top-section w-100">
+                            <p className="my-top-section w-100 display-6 fs-5">
                                 {cardsData.length} Biz Cards in Total
                             </p>
                         </div>
                         <div className="col-12 row mb-3">
                             <div className="col-sm-7 col-12 form-floating">
                                 <input type="text" className="form-control" id="searchInput" name='search' placeholder="c" onChange={(e)=>setInputSearch(e.target.value)}/>
-                                <label htmlFor="searchInput" className="form-label ps-4">Search</label>
+                                <label htmlFor="searchInput" className="form-label ps-4 display-6 fs-5">Search</label>
                             </div>
                             <div className="col-sm-5 col-12 form-floating">
                                 <select className="form-select display-6 fs-6"   id="cardCategory" name='category' onChange={(e)=>setSelectedCategory(e.target.value)}>
@@ -79,7 +79,7 @@ const Cards: FunctionComponent<CardsProps> = () => {
                                         <option className="text-capitalize" key={cat} value={cat}>{cat}</option>
                                     ))}
                                 </select>
-                                <label htmlFor="cardCategory" className="form-label ps-4">Category</label>
+                                <label htmlFor="cardCategory" className="form-label ps-4 display-6 fs-5">Category</label>
                             </div>
                         </div>
                     </div>

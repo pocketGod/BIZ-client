@@ -17,7 +17,9 @@ const About: FunctionComponent<AboutProps> = () => {
                     <div className="col-12 col-md-6">
                         <h1 className="display-5">Biz Mikonos</h1>
                         <p className="display-6 fs-5">System used for managing and exploring BIZ CARDS - a minified web version of a business card that contains all the vital information to contact a certain business</p>
+                        <hr />
                         <p className="mb-4 display-6 fs-5">This system was made as a React + Node.JS summary project</p>
+                        <hr />
                         <div className="row display-6 fs-5 text-center">
                             <div className="col-lg-6 col-12">
                                 <div className="table-container">
@@ -34,13 +36,10 @@ const About: FunctionComponent<AboutProps> = () => {
                                                 <td>Javascript</td><td>Typescript</td>
                                             </tr>
                                             <tr>
-                                                <td>Express</td><td>JWT</td>
+                                                <td>Express</td><td>CSS</td>
                                             </tr>
                                             <tr>
                                                 <td>MongoDB</td><td>Bootstrap</td>
-                                            </tr>
-                                            <tr>
-                                            <td>Bcrypt</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -69,6 +68,9 @@ const About: FunctionComponent<AboutProps> = () => {
                         Actively looking for collaborations, Please dont hesitate to reach out!</p>
                         <div className="row display-4 fs-3">
                             <div className="col-12 col-md-6 about-link-container">
+                                <p className="">
+                                    <i className="fa-solid fa-link"></i>
+                                </p>
                                 <a className="about-link" href="https://aviv-shleyfman-portfolio.netlify.app/" target={'_blank'}>Portfolio</a>
                                 
                                 <a className="about-link" href="https://www.linkedin.com/in/aviv-shleyfman/" target={'_blank'}>LinkedIn</a>

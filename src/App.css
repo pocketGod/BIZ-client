@@ -52,13 +52,13 @@
   border-radius: 20px;
   border: 1px solid #AECEFA;
   overflow: hidden;
-  min-height: 400px;
+  min-height: 300px;
 }
 
 
 .card-modal{
   min-width: 200px;
-  min-height: 500px;
+  /* min-height: 500px; */
   height: auto;
   background-color: #EFF3FF;
   border-radius: 20px;
@@ -201,13 +201,15 @@
   text-decoration: none;
   color: #233864;
   border-radius: 10px;
-  transition: color 0.5s, background-color 0.5s;
+  transition: color 0.5s, background-color 0.5s, box-shadow 0.8s;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .my-top-section-action:hover{
   background-color: #99b8e4;
   color: white;
   cursor: pointer;
+  box-shadow: none;
 }
 
 .convert-user-btn{
@@ -257,6 +259,11 @@
   align-items: center;
   gap: 10px;
 }
+.about-link-container>p{
+  color: #2d4e99;
+  margin: 0 0 -5px 0;
+  font-size: 60%;
+}
 
 .about-link{
   text-decoration: none;
@@ -284,4 +291,24 @@
 .card-user-pic{
   width: 10%;
   min-width: 120px;
+}
+
+
+nav .active{
+  font-weight: 700;
+  color: #233864 !important;
+  border-bottom: 2px solid #233864;
+  border-top: 1px solid #2338644b;
+  border-radius: 25% 25% 40% 40%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 2px 0px;
+}
+
+@media screen and (max-width:991px){
+  nav .active{
+    border: none;
+    box-shadow: none;
+    border-left: 3px solid #233864;
+    border-radius: 0;
+    padding: 0 0 0 6px;
+  }
 }
