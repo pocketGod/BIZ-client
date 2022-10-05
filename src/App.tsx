@@ -19,7 +19,7 @@ function App() {
   return (
     <div className="App">
       <ToastContainer
-        toastStyle={{ backgroundColor: "#AECEFA", color:'white' }}
+        toastStyle={{ backgroundColor: "#EFF3FF", color:'#273C67', border:'1px solid #72a1e280', fontFamily:'Josefin Sans', fontWeight:'500' }}
         // theme='light'
         position="top-right"
         autoClose={5000}
