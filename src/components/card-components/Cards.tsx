@@ -90,8 +90,8 @@ const Cards: FunctionComponent<CardsProps> = () => {
                                     <div key={card.card_id} className='col-12 col-md-6 col-lg-4 col-xxl-3 mb-3' onClick={()=>handleModalOpen(card)}>
                                         <BizCard card={card} page={'all-cards'}/>
                                     </div>
-                                ):(<></>)
-                            ):(<></>)
+                                ):(null)
+                            ):(null)
                         ))}
                     </div>
                 </>
